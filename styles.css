@@ -1,13 +1,13 @@
 /* General Styling */
-body {
+html, body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
     overflow-x: hidden;
-    width: 100vw;
-    max-width: 100%;
+    width: 100%;
+    max-width: 100vw;
 }
 
 header {
@@ -19,10 +19,7 @@ header {
     justify-content: space-between;
     width: 100%;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    max-width: 100vw;
-    overflow: hidden;
 }
-
 
 nav {
     flex-grow: 1;
@@ -79,6 +76,7 @@ h1, h2 {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    max-width: 100%;
 }
 
 .expertise-row {
@@ -143,9 +141,10 @@ button:hover {
 
 /* Responsive Design for Mobile */
 @media (max-width: 768px) {
-    body {
+    html, body {
         overflow-x: hidden;
         width: 100vw;
+        max-width: 100%;
     }
 
     header {
@@ -154,12 +153,6 @@ button:hover {
         text-align: center;
         width: 100vw;
         max-width: 100%;
-    }
-
-    .logo {
-        margin: 0 auto 10px;
-        position: relative;
-        top: 0;
     }
 
     nav {
@@ -178,5 +171,6 @@ button:hover {
         flex-direction: column;
         align-items: center;
         gap: 10px;
+        max-width: 100%;
     }
 }
